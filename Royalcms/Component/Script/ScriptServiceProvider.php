@@ -30,7 +30,7 @@ class ScriptServiceProvider extends ServiceProvider
 	 */
 	protected function registerScripts()
 	{
-	    $this->royalcms->bindShared('script', function($royalcms)
+	    $this->royalcms->singleton('script', function($royalcms)
 	    {
 	        return new HandleScripts();
 	    });
@@ -43,7 +43,7 @@ class ScriptServiceProvider extends ServiceProvider
 	 */
 	protected function registerStyles()
 	{
-	    $this->royalcms->bindShared('style', function($royalcms)
+	    $this->royalcms->singleton('style', function($royalcms)
 	    {
 	        return new HandleStyles();
 	    });
