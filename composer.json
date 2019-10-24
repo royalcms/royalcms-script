@@ -25,6 +25,15 @@
     "extra": {
         "branch-alias": {
             "dev-master": "5.0-dev"
+        },
+        "royalcms": {
+            "providers": [
+                "Royalcms\\Component\\Script\\ScriptServiceProvider"
+            ],
+            "aliases": {
+                "RC_Script": "Royalcms\\Component\\Script\\Facades\\Script",
+                "RC_Style": "Royalcms\\Component\\Script\\Facades\\Style"
+            }
         }
     },
     "minimum-stability": "dev"
