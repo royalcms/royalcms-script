@@ -54,12 +54,9 @@ class ScriptServiceProvider extends ServiceProvider
 	 */
 	protected function loadAlias()
 	{
-	    $this->royalcms->booting(function()
-	    {
-	        $loader = \Royalcms\Component\Foundation\AliasLoader::getInstance();
-	        $loader->alias('RC_Script', 'Royalcms\Component\Script\Script');
-	        $loader->alias('RC_Style', 'Royalcms\Component\Script\Style');
-	    });
+        $loader = \Royalcms\Component\Foundation\AliasLoader::getInstance();
+        $loader->alias('RC_Script', 'Royalcms\Component\Script\Facades\Script');
+        $loader->alias('RC_Style', 'Royalcms\Component\Script\Facades\Style');
 	}
 
     /**
