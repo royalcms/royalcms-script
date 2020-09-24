@@ -4,6 +4,7 @@ namespace Royalcms\Component\Script\Facades;
 
 use Royalcms\Component\Script\HandleScripts;
 use Royalcms\Component\Support\Facades\Facade;
+use RC_Hook;
 
 /**
  * Class Script
@@ -61,6 +62,7 @@ class Script extends Facade
          * @since 3.0.0
          */
         RC_Hook::do_action('rc_print_scripts');
+
         // for rc_head
         if ('' === $handles) {
             $handles = false;

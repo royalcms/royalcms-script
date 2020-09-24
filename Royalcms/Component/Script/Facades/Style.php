@@ -4,6 +4,7 @@ namespace Royalcms\Component\Script\Facades;
 
 use Royalcms\Component\Script\HandleStyles;
 use Royalcms\Component\Support\Facades\Facade;
+use RC_Hook;
 
 /**
  * Class Style
